@@ -42,6 +42,7 @@ const User = sequelize.define('user', {
         type: Sequelize.STRING
     }
 });
+
 const fetchUsers = async () => {
     try {
         const response = await axios.get('https://randomuser.me/api/?results=100');
